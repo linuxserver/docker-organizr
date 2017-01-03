@@ -17,7 +17,7 @@ HTPC/Homelab Services Organizer - Written in PHP
 [![](https://images.microbadger.com/badges/image/linuxserver/organizr.svg)](http://microbadger.com/images/linuxserver/organizr "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/organizr.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/organizr.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-hub-built/linuxserver-organizr)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-hub-built/job/linuxserver-organizr/)
 [hub]: https://hub.docker.com/r/linuxserver/organizr/
 
-[![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr.png)][organizrurl]
+[![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)][organizrurl]
 [organizrurl]: https://github.com/causefx/Organizr
 
 ## Usage

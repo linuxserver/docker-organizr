@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# fetch site
+[[ ! -d /config/www/Dashboard/.git ]] && \
+git clone -b https://github.com/causefx/Organizr /config/www/Dashboard
+
+# permissions
+chown -R abc:abc \
+	/config

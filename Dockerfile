@@ -9,8 +9,9 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # install packages
 RUN \
  apk add --no-cache \
-	php5-pdo_sqlite \
-	php5-sqlite3
+	php7-pdo_sqlite \
+	php7-sqlite3 \
+	php7-session
 
 # add local files
 COPY root/ /

@@ -76,4 +76,5 @@ Setup accounts etc via the webui, more info at [Organizr][appurl].
 
 ## Versions
 
++ **12.04.17:** Add php7-ldap package.
 + **10.03.17:** Initial Release.

@@ -9,6 +9,8 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # install packages
 RUN \
  apk add --no-cache \
+	curl && \
+ apk add --no-cache \
 	--repository http://nl.alpinelinux.org/alpine/edge/community \
 	php7-curl \
 	php7-ldap \

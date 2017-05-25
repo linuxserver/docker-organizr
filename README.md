@@ -76,6 +76,7 @@ Setup accounts etc via the webui, more info at [Organizr][appurl].
 
 ## Versions
 
++ **25.05.17:** Rebase to alpine linux 3.6.
 + **02.05.17:** Add php7-curl package.
 + **12.04.17:** Add php7-ldap package.
 + **10.03.17:** Initial Release.

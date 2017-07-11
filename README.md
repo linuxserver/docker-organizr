@@ -13,7 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsiocommunity/organizr
-[![](https://images.microbadger.com/badges/version/lsiocommunity/organizr.svg)](https://microbadger.com/images/lsiocommunity/organizr "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsiocommunity/organizr.svg)](http://microbadger.com/images/lsiocommunity/organizr "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/organizr.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/organizr.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/Community/lsiocommunity-organizr)](http://jenkins.linuxserver.io:8080/job/Dockers/job/Community/job/lsiocommunity-organizr/)
+[![](https://images.microbadger.com/badges/version/lsiocommunity/organizr.svg)](https://microbadger.com/images/lsiocommunity/organizr "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsiocommunity/organizr.svg)](http://microbadger.com/images/lsiocommunity/organizr "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/organizr.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/organizr.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/lsiocommunity/organizr-x86-64)](https://ci.linuxserver.io/job/Docker-Builders/job/lsiocommunity/job/organizr-x86-64/)
 
 HTPC/Homelab Services Organizer - Written in PHP
 

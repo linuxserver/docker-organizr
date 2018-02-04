@@ -1,7 +1,6 @@
 Fork of the LSIO Organizr Docker container to include the Organizr v2 development branch.
 
 # lsiocommunity/organizr
-[![](https://images.microbadger.com/badges/version/lsiocommunity/organizr.svg)](https://microbadger.com/images/lsiocommunity/organizr "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsiocommunity/organizr.svg)](http://microbadger.com/images/lsiocommunity/organizr "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/organizr.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/organizr.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/lsiocommunity/x86-64-organizr)](https://ci.linuxserver.io/job/Docker-Builders/job/lsiocommunity/job/x86-64-organizr/)
 
 HTPC/Homelab Services Organizer - Written in PHP
 

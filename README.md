@@ -4,7 +4,7 @@ Fork of the LSIO Organizr Docker container to include the Organizr v2 developmen
 
 HTPC/Homelab Services Organizer - Written in PHP
 
-[![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)][appurl]
+[![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)]
 
 ## Usage
 

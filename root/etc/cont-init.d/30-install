@@ -2,7 +2,7 @@
 
 # fetch site
 [[ ! -d /config/www/Dashboard/.git ]] && \
-git clone https://github.com/causefx/Organizr /config/www/Dashboard
+git clone -b v2-develop https://github.com/causefx/Organizr /config/www/Dashboard
 
 # permissions
 chown -R abc:abc \

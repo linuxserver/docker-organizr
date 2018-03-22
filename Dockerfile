@@ -1,12 +1,12 @@
-FROM lsiobase/alpine.nginx:3.6
+FROM lsiobase/alpine.nginx:3.7
 MAINTAINER christronyxyocum
 
-# set version label
+# Set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# install packages
+# Install packages
 RUN \
  apk add --no-cache \
 	curl \
@@ -17,9 +17,9 @@ RUN \
 	php7-session \
 	php7-zip
 
-# add local files
+# Add local files
 COPY root/ /
 
-# ports and volumes
+# Ports and volumes
 EXPOSE 80
 VOLUME /config

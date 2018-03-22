@@ -1,9 +1,13 @@
 #!/usr/bin/with-contenv bash
 
-# fetch site
-[[ ! -d /config/www/Dashboard/.git ]] && \
-git clone -b v2-develop https://github.com/causefx/Organizr /config/www/Dashboard
+# Fetch site or update existing
+if [[ ! -d /config/www/Dashboard/.git ]]; then
+  git clone -b v2-develop https://github.com/causefx/Organizr /config/www/Dashboard
+elif [[ -d /config/www/Dashboard/.git ]]; then
+	cd /config/www/Dashboard || return
+  git pull
+fi
 
-# permissions
+# Set Permissions
 chown -R abc:abc \
 	/config

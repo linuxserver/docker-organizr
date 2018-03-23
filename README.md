@@ -1,16 +1,16 @@
 Fork of the LSIO Organizr Docker container to include the Organizr v2 development branch.
 
-## tronyx/docker-organizr-v2
+# tronyx/docker-organizr-v2
 
 Feel free to checkout the [GitHub repository](https://github.com/christronyxyocum/docker-organizr-v2) for this project and report any issues that you may have found.
 
-# Organizr
+## Organizr
 
 An HTPC/Homelab services organizer that is written in PHP.
 
 ![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)
 
-# Usage
+## Usage
 
 ```
 docker create \
@@ -21,7 +21,7 @@ docker create \
   tronyx/docker-organizr-v2
 ```
 
-# Parameters
+## Parameters
 
 The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container. So `-p 8080:80` would expose port 80 from inside the container to be accessible from the host's IP on port 8080 and `http://192.168.x.x:8080` would show you what's running INSIDE the container on port 80.
 
@@ -32,7 +32,7 @@ The parameters are split into two halves, separated by a colon, the left hand si
 
 It is based on Alpine Linux with an s6 overlay.
 
-# User / Group Identifiers
+### User / Group Identifiers
 
 Sometimes when using data volumes (`-v` flags) permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" ™.
 
@@ -43,11 +43,11 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-# Setting up the application
+## Setting up the application
 
 Setup accounts, service tabs, etc. via the webUI. More info can be found on the official [Organizr GitHub repository](https://github.com/causefx/Organizr/).
 
-# Info
+## Info
 
 * Shell access whilst the container is running: `docker exec -it organizr /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f organizr`

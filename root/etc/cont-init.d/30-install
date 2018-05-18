@@ -11,7 +11,7 @@ elif [[ -d /config/www/Dashboard/.git ]]; then
   echo '|  Updating Organizr  |'
   echo '-----------------------'
   cd /config/www/Dashboard || return
-  git reset --hard
+  git reset --hard origin/v2-develop
   git pull --rebase
 fi
 

@@ -2,8 +2,14 @@
 
 # Fetch site or update existing
 if [[ ! -d /config/www/Dashboard/.git ]]; then
+  echo '-----------------------'
+  echo '| Installing Organizr |'
+  echo '-----------------------'
   git clone -b v2-develop https://github.com/causefx/Organizr /config/www/Dashboard
 elif [[ -d /config/www/Dashboard/.git ]]; then
+  echo '-----------------------'
+  echo '|  Updating Organizr  |'
+  echo '-----------------------'
   cd /config/www/Dashboard || return
   git reset --hard
   git pull --rebase

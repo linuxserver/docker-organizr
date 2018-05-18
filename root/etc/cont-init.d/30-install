@@ -5,7 +5,8 @@ if [[ ! -d /config/www/Dashboard/.git ]]; then
   git clone -b v2-develop https://github.com/causefx/Organizr /config/www/Dashboard
 elif [[ -d /config/www/Dashboard/.git ]]; then
   cd /config/www/Dashboard || return
-  git pull
+  git reset --hard
+  git pull --rebase
 fi
 
 # Set Permissions

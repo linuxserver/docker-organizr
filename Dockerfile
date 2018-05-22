@@ -4,7 +4,6 @@ MAINTAINER christronyxyocum
 # Set version label
 ARG BUILD_DATE
 ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # Install packages
 RUN \
@@ -15,7 +14,8 @@ RUN \
 	php7-pdo_sqlite \
 	php7-sqlite3 \
 	php7-session \
-	php7-zip
+	php7-zip \
+  mediainfo
 
 # Add local files
 COPY root/ /

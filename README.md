@@ -1,6 +1,6 @@
 Fork of the LSIO Organizr Docker container to include the Organizr v2 development branch.
 
-# tronyx/docker-organizr-v2
+# tronyx/docker-organizr-v2:plex-theme
 
 Feel free to submit Pull Requests and report any Issues that you may have found.
 
@@ -42,6 +42,11 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
   $ id <dockeruser>
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
+
+## Image Tags
+
+* The `latest` tag will get you the original Organizr v2 image.
+* The `plex` tag will get you the original Organizr v2 image, but with some changes found in the plex-theme branch of the GitHub repo to accommodate the [Plex Theme](https://github.com/Burry/organizr-v2-plex-theme) for Organizr v2 by Burry.
 
 ## Setting up the application
 

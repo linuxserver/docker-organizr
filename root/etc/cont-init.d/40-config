@@ -18,3 +18,7 @@ echo "pm.min_spare_servers = 1" >> /config/php/www.conf
 echo "pm.max_spare_servers = 3" >> /config/php/www.conf
 echo "pm.process_idle_timeout = 10s;" >> /config/php/www.conf
 echo "pm.max_requests = 0" >> /config/php/www.conf
+
+# Set Permissions
+chown -R abc:abc \
+	/config/php/www.conf

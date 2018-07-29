@@ -1,0 +1,24 @@
+#!/usr/bin/with-contenv bash
+
+# Edit www.conf file for PHP-FPM
+echo '-----------------------'
+echo '| Configuring PHP-FPM |'
+echo '-----------------------'
+echo "[www]" > /config/php/www.conf
+echo "user = abc" >> /config/php/www.conf
+echo "group = abc" >> /config/php/www.conf
+echo "listen = '/var/run/php7-fpm.sock'" >> /config/php/www.conf
+echo "listen.owner = abc" >> /config/php/www.conf
+echo "listen.group = abc" >> /config/php/www.conf
+echo "listen.mode = 0660" >> /config/php/www.conf
+echo "pm = ondemand" >> /config/php/www.conf
+echo "pm.max_children = 4000" >> /config/php/www.conf
+echo "pm.start_servers = 2" >> /config/php/www.conf
+echo "pm.min_spare_servers = 1" >> /config/php/www.conf
+echo "pm.max_spare_servers = 3" >> /config/php/www.conf
+echo "pm.process_idle_timeout = 10s;" >> /config/php/www.conf
+echo "pm.max_requests = 0" >> /config/php/www.conf
+
+# Set Permissions
+chown -R abc:abc \
+	/config/php/www.conf

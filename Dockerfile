@@ -1,13 +1,12 @@
 FROM lsiobase/alpine.nginx:3.7
+MAINTAINER christronyxyocum
 
-# set version label
+# Set version label
 ARG BUILD_DATE
 ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
 
+# Install packages
 RUN \
- echo "**** install packages ****" && \
  apk add --no-cache \
 	curl \
 	php7-curl \
@@ -15,11 +14,12 @@ RUN \
 	php7-pdo_sqlite \
 	php7-sqlite3 \
 	php7-session \
-	php7-zip
+	php7-zip \
+  mediainfo
 
-# add local files
+# Add local files
 COPY root/ /
 
-# ports and volumes
+# Ports and volumes
 EXPOSE 80
 VOLUME /config

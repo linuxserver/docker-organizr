@@ -1,0 +1,38 @@
+#!/usr/bin/with-contenv bash
+
+# set envs for migration purposes
+old_location=/config/www
+new_location=/config/organizr
+
+# create directory structure
+mkdir -p \
+	/config/organizr
+
+# create symlinks
+symlinks=( \
+/var/www/html/config/config.php
+)
+
+for i in "${symlinks[@]}"
+do
+[[ -e "$i" && ! -L "$i" ]] && rm -rf "$i"
+[[ ! -L "$i" ]] && ln -s /config/organizr/"$(basename "$i")" "$i"
+done
+
+# migrate old installs - if set up using defaults on prior versions where app is installed in /config/www/Dashboard
+if [ -f /config/www/users.db ] && [ ! -f /config/.migrated ];
+	then 
+	echo "**** running migration ****"
+	apk add --no-cache --virtual=build-dependencies rsync
+	rsync -av $old_location/ $new_location --exclude Dashboard
+	cp $old_location/Dashboard/config/config.php $new_location/config.php
+	sed -i "s;'database_Location' => .*;'database_Location' => '$new_location/',;g" $new_location/config.php
+	sed -i "s;'user_home' => .*;'user_home' => '$new_location/users/',;g" $new_location/config.php
+	cp /defaults/default /config/nginx/site-confs/default 
+	touch /config/.migrated
+	apk del --purge build-dependencies
+fi
+
+# permissions
+chown -R abc:abc \
+	/config

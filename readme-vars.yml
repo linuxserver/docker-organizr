@@ -1,7 +1,7 @@
 ---
 
 # project information
-project_name: Organizr
+project_name: organizr
 project_url: "https://github.com/causefx/Organizr"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png"
 project_blurb: |

@@ -20,12 +20,12 @@ From August 2018 onwards, Linuxserver are in the midst of switching to a new CI 
 
 TLDR: Multi-arch support is changing from multiple repos to one repo per container image.
 
-# [linuxserver/Organizr](https://github.com/linuxserver/docker-Organizr)
+# [linuxserver/organizr](https://github.com/linuxserver/docker-organizr)
 [![](https://img.shields.io/discord/354974912613449730.svg?logo=discord&label=LSIO%20Discord&style=flat-square)](https://discord.gg/YWrKVTn)
-[![](https://images.microbadger.com/badges/version/linuxserver/Organizr.svg)](https://microbadger.com/images/linuxserver/Organizr "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/linuxserver/Organizr.svg)](https://microbadger.com/images/linuxserver/Organizr "Get your own version badge on microbadger.com")
-![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/Organizr.svg)
-![Docker Stars](https://img.shields.io/docker/stars/linuxserver/Organizr.svg)
+[![](https://images.microbadger.com/badges/version/linuxserver/organizr.svg)](https://microbadger.com/images/linuxserver/organizr "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/linuxserver/organizr.svg)](https://microbadger.com/images/linuxserver/organizr "Get your own version badge on microbadger.com")
+![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/organizr.svg)
+![Docker Stars](https://img.shields.io/docker/stars/linuxserver/organizr.svg)
 
 [Organizr](https://github.com/causefx/Organizr) is a HTPC/Homelab Services Organizer - Written in PHP
 
@@ -39,7 +39,7 @@ Want guests to be able to visit too? Enable Guest support for those tabs.
 For more information on Organizr and information on how to use it visit their site at https://github.com/causefx/Organizr
 
 
-[![Organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)](https://github.com/causefx/Organizr)
+[![organizr](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png)](https://github.com/causefx/Organizr)
 
 ## Supported Architectures
 
@@ -61,14 +61,14 @@ Here are some example snippets to help you get started creating a container.
 
 ```
 docker create \
-  --name=Organizr \
+  --name=organizr \
   -e PUID=1001 \
   -e PGID=1001 \
   -e TZ=<your timezone, eg Europe/London> \
   -p 9983:80 \
   -v <path to data>:/config \
   --restart unless-stopped \
-  linuxserver/Organizr
+  linuxserver/organizr
 ```
 
 
@@ -80,9 +80,9 @@ Compatible with docker-compose v2 schemas.
 ---
 version: "2"
 services:
-  Organizr:
-    image: linuxserver/Organizr
-    container_name: Organizr
+  organizr:
+    image: linuxserver/organizr
+    container_name: organizr
     environment:
       - PUID=1001
       - PGID=1001
@@ -131,12 +131,12 @@ Leave the path as default and set your timezone - you're done!
 
 ## Support Info
 
-* Shell access whilst the container is running: `docker exec -it Organizr /bin/bash`
-* To monitor the logs of the container in realtime: `docker logs -f Organizr`
+* Shell access whilst the container is running: `docker exec -it organizr /bin/bash`
+* To monitor the logs of the container in realtime: `docker logs -f organizr`
 * container version number 
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' Organizr`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' organizr`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/Organizr`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/organizr`
 
 ## Versions
 

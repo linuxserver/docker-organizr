@@ -35,4 +35,5 @@ fi
 
 # permissions
 chown -R abc:abc \
-	/config
+	/config \
+	/var/www/html

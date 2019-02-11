@@ -45,6 +45,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "11.02.19:", desc: "Fix permissions on new app location" }
   - { date: "31.12.18:", desc: "Moved to pipeline building from v1-master branch" }
   - { date: "05.09.18:", desc: "Rebase to Alpine 3.8" }
   - { date: "10.01.18:", desc: "Rebase to Alpine 3.7" }

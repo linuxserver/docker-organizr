@@ -10,7 +10,7 @@ LABEL maintainer="sparklyballs, homerr"
 
 RUN \
 echo "**** install runtime packages ****" && \
-apk add --no-cache \
+apk add --no-cache --upgrade \
 	curl \
 	php7-curl \
 	php7-ldap \
@@ -21,7 +21,7 @@ echo "**** fetch organizr ****" && \
 mkdir -p\
 	/var/www/html && \
 if [ -z ${ORGANIZR_COMMIT+x} ]; then \
- 	ORGANIZR_COMMIT=$(curl -sX GET "https://api.github.com/repos/causefx/Organizr/branches/v1-master" \
+	ORGANIZR_COMMIT=$(curl -sX GET "https://api.github.com/repos/causefx/Organizr/branches/v1-master" \
 	| awk '/sha/{print $4;exit}' FS='[""]'); \
 fi && \
 curl -o \

@@ -24,7 +24,7 @@ echo "**** fetch organizr ****" && \
 mkdir -p\
 	/var/www/html && \
 if [ -z ${ORGANIZR_COMMIT+x} ]; then \
-	ORGANIZR_COMMIT=$(curl -sX GET "https://api.github.com/repos/causefx/Organizr/branches/v1-master" \
+	ORGANIZR_COMMIT=$(curl -sX GET "https://api.github.com/repos/causefx/Organizr/branches/v2-master" \
 	| awk '/sha/{print $4;exit}' FS='[""]'); \
 fi && \
 curl -o \

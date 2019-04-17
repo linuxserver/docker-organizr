@@ -33,6 +33,15 @@ if [ -f /config/www/users.db ] && [ ! -f /config/.migrated ];
 	apk del --purge build-dependencies
 fi
 
+# set up new install to use /config/organizr for users
+if [ ! -f /config/organizr/users.db ];
+	then
+	echo "**** making stuff work ****"
+	cp /defaults/config.php /config/organizr/config.php
+	sed -i "s;'timezone' => .*;'timezone' => '$TZ',;g" $new_location/config.php
+	sed -i "s;'user_home' => .*;'user_home' => '$new_location/users/',;g" $new_location/config.php
+fi
+
 # permissions
 chown -R abc:abc \
 	/config \

@@ -40,11 +40,10 @@ app_setup_block_enabled: true
 app_setup_block: |
   Dead simple to get running, create the container as instructed and start it. When up and running, load the site.
 
-  Leave the path as default and set your timezone - you're done!
-
 
 # changelog
 changelogs:
+  - { date: "18.04.19:", desc: "Fix new install not working." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "26.02.19:", desc: "Upgrade packages during install to prevent mismatch with baseimage." }
   - { date: "22.02.19:", desc: "Rebasing to alpine 3.9." }

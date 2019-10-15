@@ -64,7 +64,7 @@ popt-1.16-r7
 readline-7.0.003-r1
 scanelf-1.2.3-r0
 shadow-4.5-r2
-sqlite-libs-3.28.0-r0
+sqlite-libs-3.28.0-r1
 ssl_client-1.29.3-r10
 tzdata-2019b-r0
 xz-5.2.4-r0

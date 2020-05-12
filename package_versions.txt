@@ -19,7 +19,7 @@ libc-utils-0.7.1-r0
 libcrypto1.1-1.1.1g-r0
 libcurl-7.64.0-r3
 libedit-20181209.3.1-r0
-libldap-2.4.48-r0
+libldap-2.4.48-r1
 libmagic-5.36-r1
 libressl2.7-libcrypto-2.7.5-r0
 libressl2.7-libssl-2.7.5-r0
@@ -64,7 +64,7 @@ popt-1.16-r7
 readline-7.0.003-r1
 scanelf-1.2.3-r0
 shadow-4.5-r2
-sqlite-libs-3.28.0-r2
+sqlite-libs-3.28.0-r3
 ssl_client-1.29.3-r10
 tzdata-2019c-r0
 xz-5.2.4-r0

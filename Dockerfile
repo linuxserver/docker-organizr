@@ -1,4 +1,4 @@
-FROM lsiobase/nginx:3.9
+FROM lsiobase/nginx:3.12
 
 # set version label
 ARG ORGANIZR_COMMIT

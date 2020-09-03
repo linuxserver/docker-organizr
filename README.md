@@ -224,6 +224,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **02.09.20:** - Rebase to Alpine 3.12
 * **18.04.19:** - Fix new install not working.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **26.02.19:** - Upgrade packages during install to prevent mismatch with baseimage.

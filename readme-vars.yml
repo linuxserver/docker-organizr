@@ -5,6 +5,8 @@ project_name: organizr
 project_url: "https://github.com/causefx/Organizr"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/organizr-icon.png"
 project_blurb: |
+  # THIS IMAGE IS DEPRECATED. Please use the official image at https://hub.docker.com/r/organizr/organizr
+
   [{{ project_name|capitalize }}]({{ project_url }}) is a HTPC/Homelab Services Organizer - Written in PHP
 
   Do you have quite a bit of services running on your computer or server? 
